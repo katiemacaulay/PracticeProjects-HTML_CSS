@@ -17,14 +17,15 @@ font-size: 12px;
 }
 header{
   padding-left: 40px;
+  padding-top: 5px;
   font-size: 35px;
-  font-family: 'Allura', cursive;
+  font-family: 'Satisfy', cursive;
 }
 h1{
-  margin-top: -5px;
+  margin-top: -12px;
   padding: 0px;
   text-align: center;
-  font-size: 10px;
+  font-size: 13px;
   font-variant: small-caps;
 }
 .nav{
@@ -32,11 +33,11 @@ h1{
   padding-top: 5px;
 }
 .nav > li{
-  margin-right: 30px;
+  margin-right: 25px;
   display: inline-block;
 }
 .navoption{
-  font-size: 10px;
+  font-size: 12px;
   font-family: 'Raleway', sans-serif;
   text-decoration: none;
   color: white;
@@ -109,5 +110,5 @@ main{
 p{
   position: relative;
   margin: 10px;
-  background-color: yellow;
+  border: solid 1px black;
 }
