@@ -4,9 +4,7 @@ width:100%;
 height: 100%;
 margin: 0 auto;
 padding: 0;
-/* background-image: url(https://s3.amazonaws.com/spoonflower/public/design_thumbnails/0544/3183/rViolets2_shop_preview.png);
-background-repeat: no-repeat;
-background-size: cover; */
+background-color: white;
 font-size: 12px;
 }
 .topbar{
@@ -14,7 +12,6 @@ font-size: 12px;
   z-index: 1;
   width: 100%;
   background-color: hsla(0, 0%, 75%, 0.7);
-  padding-top: 15px;
   display: flex;
   justify-content: space-around;
 }
@@ -38,14 +35,18 @@ h1{
   margin-right: 30px;
   display: inline-block;
 }
+.navoption{
+  font-size: 10px;
+  font-variant: small-caps;
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  color: white;
+}
 main{
-    margin: 0px 40px 0px 40px;
+  padding: 0;
+  margin: 0 auto;
 }
-/* img{
-  width: 100%;
-  height: auto; */
-}
-.slideshow{
+#photogallery{
   width: 100%;
   height: 100%;
   display: block;
@@ -53,7 +54,6 @@ main{
   overflow: hidden;
   position: absolute;
 }
-
 .slide{
   position: absolute;
   width: 100%;
@@ -62,38 +62,53 @@ main{
   animation: slide 12s infinite;
   overflow: hidden;
 }
-
 .slide:nth-child(1) {
   left: 0%;
   animation-delay: -1s;
+  background-image: url("../img/paste.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.slide:nth-child(2) {
+  animation-delay: 1s;
+  background-image: url("../img/oliver.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.slide:nth-child(3) {
+  animation-delay: 3s;
   background-image: url("../img/demi.jpg");
   background-size: cover;
   background-position: center;
 }
-
-.slide:nth-child(2) {
-  background-image: url("../img/oliver.jpg");}
-
-.slide:nth-child(3) {
-  background: #36BF66;
-}
-
 .slide:nth-child(4) {
-  background: #D9D055;
+  animation-delay: 5s;
+  background-image: url("../img/red.jpg");
+  background-size: cover;
+  background-position: center;
 }
-
-.slide-number {
-  color: #000;
-  text-align: center;
-  font-size: 10em;
+.slide:nth-child(5){
+  animation-delay: 8s;
+  background-image: url("../img/tie.jpg");
+  background-size: cover;
+  background-position: center;
 }
-
 @keyframes slide {
-  20% {margin-left: 0px;}
-  30% {margin-left: -728px;}
-  50% {margin-left: -728px;}
-  60% {margin-left: -1456px;}
-  70% {margin-left: -1456px;}
-  80% {margin-left: -2184px;}
-  90% {margin-left: -2184px;}
-} */
+  0% {left: 100%; width: 100%}
+  5% {left: 0%;}
+  25% {left: 0%;}
+  30% {left: -100%; width: 100%}
+  30.0001% {left: -100%; width: 0%}
+  100% {left: -100%; width: 0%;}
+}
+.dottedline{
+  position:absolute;
+  border: solid black 3px;
+  background-color: blue;
+  margin-top: 60%;
+}
+p{
+  position: absolute;
+  margin-top: 80%;
+  background-color: yellow;
+}
