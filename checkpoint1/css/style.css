@@ -11,9 +11,10 @@ font-size: 12px;
   position: fixed;
   z-index: 2;
   width: 100%;
-  background-color: hsla(0, 0%, 75%, 0.7);
+  background-color: hsla(0, 0%, 75%, 0.6);
   display: flex;
   justify-content: space-around;
+  color: white;
 }
 header{
   padding-left: 40px;
@@ -111,4 +112,21 @@ p{
   position: relative;
   margin: 10px;
   border: solid 1px black;
+}
+h2{
+  margin: 5px;
+  padding: 10px;
+}
+.portraits{
+  display:flex;
+  justify-content: center;
+}
+.portrait1{
+  background-color: green;
+}
+.portrait2{
+  background-color: blue;
+}
+.portrait3{
+  background-color: red;
 }
