@@ -9,7 +9,7 @@ font-size: 12px;
 }
 .topbar{
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   width: 100%;
   background-color: hsla(0, 0%, 75%, 0.7);
   display: flex;
@@ -37,7 +37,6 @@ h1{
 }
 .navoption{
   font-size: 10px;
-  font-variant: small-caps;
   font-family: 'Raleway', sans-serif;
   text-decoration: none;
   color: white;
@@ -47,8 +46,9 @@ main{
   margin: 0 auto;
 }
 #photogallery{
+  z-index:1;
   width: 100%;
-  height: 100%;
+  height: 500px;
   display: block;
   background-color: white;
   overflow: hidden;
@@ -102,13 +102,12 @@ main{
   100% {left: -100%; width: 0%;}
 }
 .dottedline{
-  position:absolute;
-  border: solid black 3px;
-  background-color: blue;
-  margin-top: 60%;
+  position:relative;
+  border-bottom: dotted black 3px;
+  padding-top: 510px;
 }
 p{
-  position: absolute;
-  margin-top: 80%;
+  position: relative;
+  margin: 10px;
   background-color: yellow;
 }
