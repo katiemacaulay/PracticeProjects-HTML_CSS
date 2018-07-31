@@ -1,15 +1,99 @@
-body{
+html, body{
 font-family: 'Raleway', sans-serif;
+width:100%;
+height: 100%;
+margin: 0 auto;
+padding: 0;
+/* background-image: url(https://s3.amazonaws.com/spoonflower/public/design_thumbnails/0544/3183/rViolets2_shop_preview.png);
+background-repeat: no-repeat;
+background-size: cover; */
+font-size: 12px;
+}
+.topbar{
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  background-color: hsla(0, 0%, 75%, 0.7);
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-around;
 }
 header{
-  font-size: 60px;
-  margin-left: 5%;
-  margin-top: 5%;
+  padding-left: 40px;
+  font-size: 35px;
+  font-family: 'Allura', cursive;
 }
 h1{
-  margin-left: 15%;
-  margin-top: 2%;
+  margin-top: -5px;
+  padding: 0px;
+  text-align: center;
+  font-size: 10px;
+  font-variant: small-caps;
+}
+.nav{
+  list-style-type: none;
+  padding-top: 5px;
+}
+.nav > li{
+  margin-right: 30px;
+  display: inline-block;
 }
 main{
-  margin-left: 5%;
+    margin: 0px 40px 0px 40px;
 }
+img{
+  width: 100%;
+  height: auto;
+}
+/* #slideshow {
+  height: 510px;
+  width: 728px;
+  margin: 0 auto;
+}
+
+.slide-wrapper {
+  height: auto;
+  width: 400%;
+  display: flex;
+  flex-wrap:wrap;
+  overflow-x: auto;
+}
+
+.slide {
+  float: left;
+  height: 510px;
+  width: 728px;
+}
+
+.slide:nth-child(1) {
+  background-image: url("../img/demi.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.slide:nth-child(2) {
+  background-image: url("../img/oliver.jpg");}
+
+.slide:nth-child(3) {
+  background: #36BF66;
+}
+
+.slide:nth-child(4) {
+  background: #D9D055;
+}
+
+.slide-number {
+  color: #000;
+  text-align: center;
+  font-size: 10em;
+}
+
+@-webkit-keyframes slide {
+  20% {margin-left: 0px;}
+  30% {margin-left: -728px;}
+  50% {margin-left: -728px;}
+  60% {margin-left: -1456px;}
+  70% {margin-left: -1456px;}
+  80% {margin-left: -2184px;}
+  90% {margin-left: -2184px;}
+} */
