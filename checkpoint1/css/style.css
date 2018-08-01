@@ -31,7 +31,7 @@ h1{
 }
 .nav{
   list-style-type: none;
-  padding-top: 20px;
+  padding-top: 30px;
 }
 .nav > li{
   margin-right: 25px;
@@ -67,13 +67,13 @@ main{
 .slide:nth-child(1) {
   left: 0%;
   animation-delay: -1s;
-  background-image: url("../img/paste.jpg");
+  background-image: url("../img/oliver.jpg");
   background-size: cover;
   background-position: center;
 }
 .slide:nth-child(2) {
   animation-delay: 1s;
-  background-image: url("../img/oliver.jpg");
+  background-image: url("../img/kristen.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -85,13 +85,13 @@ main{
 }
 .slide:nth-child(4) {
   animation-delay: 5s;
-  background-image: url("../img/red.jpg");
+  background-image: url("../img/ashley.jpg");
   background-size: cover;
   background-position: center;
 }
 .slide:nth-child(5){
   animation-delay: 8s;
-  background-image: url("../img/tie.jpg");
+  background-image: url("../img/anneka.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -116,6 +116,7 @@ p{
   font-size: 150%;
 }
 h2{
+  font-size: 20px;
   margin: 5px;
   padding: 10px;
 }
@@ -137,28 +138,66 @@ h3{
   margin-bottom: 15%;
 }
 .portraits{
-  display:inline-flex;
-  justify-content: center;
-  align-items: center;
-  height: 500px;
-  width: 90%;
-  margin-left: 5%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
-.portraits > div{
-  background-size: contain;
+.portraits> div{
   background-repeat: no-repeat;
-  height: 250px;
-  width: 100%;
+  background-size: contain;
+  margin: 10px;
 }
 .portrait1{
-  background-image: url("../img/bond.jpg");
+  background-image: url("../img/hannah.jpg");
+  height: 300px;
+  width: 200px;
 }
 .portrait2{
-  background-image: url("../img/intense.jpg");
+  background-image: url("../img/bobo2.jpg");
+  height: 300px;
+  width: 450px;
 }
 .portrait3{
-  background-image: url("../img/soft.jpg");
-
+  background-image: url("../img/anne.jpg");
+  height: 300px;
+  width: 200px;
+}
+.boudoirs{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.boudoirs > div{
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 10px;
+}
+.boudoir1{
+  background-image: url("../img/bond.jpg");
+  height: 300px;
+  width: 167px;
+}
+.boudoir2{
+  background-image: url("../img/sweet.jpg");
+  height: 300px;
+  width: 200px;
+}
+.boudoir3{
+  background-image: url("../img/folly.jpg");
+  height: 300px;
+  width: 200px;
+}
+.boudoir4{
+  background-image: url("../img/brit.jpg");
+  height: 300px;
+  width: 200px;
+}
+.bb{
+  padding-top: 40px;
+  padding-bottom: 20px;
+  background-color: #4d5259;
+  color: white;
 }
 footer{
   margin-right: 5%;
