@@ -165,3 +165,6 @@ footer{
   display: flex;
   justify-content: flex-end;
 }
+.contact{
+  margin: 5% 0% 15% 0%;
+}
