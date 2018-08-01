@@ -91,17 +91,31 @@ main{
 }
 .slide:nth-child(5){
   animation-delay: 8s;
-  background-image: url("../img/anneka.jpg");
+  background-image: url("../img/anneka.JPG");
   background-size: cover;
   background-position: center;
 }
 @keyframes slide {
-  0% {left: 100%; width: 100%}
-  5% {left: 0%;}
-  25% {left: 0%;}
-  30% {left: -100%; width: 100%}
-  30.0001% {left: -100%; width: 0%}
-  100% {left: -100%; width: 0%;}
+  0% {
+    left: 100%;
+    width: 100%
+  }
+  5% {
+    left: 0%;
+  }
+  25% {
+    left: 0%;
+  }
+  30% {
+    left: -100%;
+    width: 100%
+  }
+  30.0001% {
+    left: -100%;
+    width: 0%}
+  100% {
+    left: -100%;
+    width: 0%;}
 }
 .dottedline{
   position:relative;
