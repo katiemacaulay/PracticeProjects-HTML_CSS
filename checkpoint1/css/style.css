@@ -85,7 +85,7 @@ main{
 }
 .slide:nth-child(4) {
   animation-delay: 5s;
-  background-image: url("../img/ashley.jpg");
+  background-image: url("../img/ashley.JPG");
   background-size: cover;
   background-position: center;
 }
@@ -162,7 +162,7 @@ h3{
   margin: 10px;
 }
 .portrait1{
-  background-image: url("../img/hannah.jpg");
+  background-image: url("../img/hannah.JPG");
   height: 300px;
   width: 200px;
 }
@@ -172,7 +172,7 @@ h3{
   width: 450px;
 }
 .portrait3{
-  background-image: url("../img/anne.jpg");
+  background-image: url("../img/anne.JPG");
   height: 300px;
   width: 200px;
 }
@@ -193,7 +193,7 @@ h3{
   width: 167px;
 }
 .boudoir2{
-  background-image: url("../img/sweet.jpg");
+  background-image: url("../img/sweet.JPG");
   height: 300px;
   width: 200px;
 }
@@ -203,7 +203,7 @@ h3{
   width: 200px;
 }
 .boudoir4{
-  background-image: url("../img/brit.jpg");
+  background-image: url("../img/brit.JPG");
   height: 300px;
   width: 200px;
 }
