@@ -1,0 +1,19 @@
+body{
+  margin: 0, auto;
+}
+.layout{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  grid-gap: 20px;
+  grid-template-areas:
+    "a b b"
+}
+aside{
+  position: sticky;
+  background-color: grey;
+  grid-area: a;
+}
+.main{
+  grid-area: b;
+}
