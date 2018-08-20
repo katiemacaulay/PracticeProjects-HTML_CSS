@@ -1,5 +1,6 @@
 html, body{
-  margin: 0px, auto;
+  margin: 0px auto;
+  box-sizing: border-box;
   font-family: 'Sawarabi Mincho', sans-serif;
 }
 .layout{
@@ -18,9 +19,9 @@ aside{
 }
 .stickyside{
   position: fixed;
-  width: 17%;
+  width: 16.5%;
 }
-h1{
+.lead{
   background-color: white;
   font-size: 20px;
   font-weight: 600;
@@ -32,11 +33,12 @@ h1{
 }
 .contact{
   margin: auto;
-  padding: 20px 0px 20px 0px;
+  padding: 10px 0px 5px 0px;
 }
 .sidebox{
   background-color: white;
   margin: auto;
+  margin-top:20px;
   border: dotted 1px black;
   border-radius: 7px;
 }
@@ -51,6 +53,14 @@ h1{
 }
 ul{
   list-style-type: none;
+  padding: 0px;
+}
+.links{
+  display: flex;
+  justify-content: space-around;
+}
+.icon{
+  height:30px;
 }
 .main{
   grid-area: b;
@@ -61,7 +71,9 @@ ul{
     "boxa boxa"
     "boxb boxb"
     "boxf boxf"
+    "boxi boxi"
     "boxc boxd"
+    "boxg boxh"
     "boxe boxe";
 }
 .mainimg{
@@ -78,11 +90,13 @@ ul{
   margin: 50px 50px 90px 50px;
 }
 h2{
-  padding-left: 20px;
+  margin: 20px;
   font-size: 22px;
+  text-align: center;
+  border-bottom: dashed 1px black;
 }
 .musicclass > p{
-  padding: 20px;
+  margin: 20px;
 }
 .myphoto{
   background-image: url(../img/IMG_3096.jpg);
@@ -95,11 +109,11 @@ h2{
 h4{
   text-align: center;
   font-size: 22px;
-  padding: 0px 0px 20px 0px;
+  margin: 0px 0px 20px 0px;
 }
 table{
   margin-left: 55px;
-  width: 100%;
+  width: 90%;
 }
 .eventpicture{
   background-image: url(../img/church.jpg);
@@ -115,8 +129,15 @@ table{
 .story2{
   grid-area: boxd;
 }
+.story3{
+  grid-area: boxg;
+  border-top: solid black 1px;
+}
+.story4{
+  grid-area: boxh;
+  border-top: solid black 1px;
+}
 article{
-  padding: 60px 20px 60px 20px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas:
@@ -127,30 +148,44 @@ h3{
   grid-area: aa;
   font-size: 18px;
   text-align: center;
+  text-decoration: underline;
   height: 100px;
   line-height: 100px;
 }
 article > p{
   grid-area: bb;
-  padding: 20px 5px 0px 5px;
+  padding: 20px;
+  border-bottom: dashed 1px black;
 }
 .storyimg{
-  grid-area: cc;
   background-image: url(http://www.tamswitmark.com/wp-content/uploads/2013/09/WIZ-YPE-logo1-541x346.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 88.8px;
-  width: 133.4px;
-  box-shadow: 0px 0px 1px 1px #b29449;
 }
 .storyimg2{
+  background-image: url(../img/drumline2.jpg);
+}
+.storyimg3{
+  background-image: url(../img/lower.jpg);
+}
+.storyimg4{
+  background-image: url(../img/upper.jpg);
+}
+article > div{
   grid-area: cc;
-  background-image: url(https://static1.squarespace.com/static/528d0f00e4b0b97e9634be40/t/581e1ebed1758e9703f5bd89/1478369029926/);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  height: 88.8px;
-  width: 133.4px;
-  box-shadow: 0px 0px 1px 1px #b29449;
+  height: 150px;
+  width: 230px;
+}
+.storyimg3, .storyimg4{
+  background-size: cover;
+  height: 250px;
+  width: 100%;
+}
+.story4, .story3{
+  grid-template-areas:
+    "cc cc cc"
+    "aa aa aa"
+    "bb bb bb"
 }
 .upcomingevents{
   background-color: #e8b46f;
@@ -159,4 +194,7 @@ article > p{
 }
 .youtubelinks{
   grid-area: boxe;
+}
+.mselectives{
+  grid-area: boxi;
 }
