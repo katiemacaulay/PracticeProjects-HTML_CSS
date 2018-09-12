@@ -5,8 +5,7 @@ let clickCounter = 0;
 $('.musicalperformance').click(function(){
   clickCounter++;
   $(".textbox").text(`You have made: $${clickCounter}`);
-  buttonCheck;
-// });
+});
 
 $('.stopper').click(function(){
   Tone.Transport.stop()
