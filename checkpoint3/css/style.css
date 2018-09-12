@@ -20,7 +20,7 @@ h2{
 button{
   border-radius: 5px;
   width: 250px;
-  margin-top: -40px;
+  margin-top: -20px;
   font-family: 'Gamja Flower', cursive;
   font-size: 30px;
 }
@@ -29,7 +29,7 @@ button{
   width: 40px;
   margin: 2px;
   font-size: 0px;
-  background-color: #a2a7ad;
+  background-color: #d2d8e0;
   display: block;
 }
 .intrument1beats{
@@ -76,4 +76,15 @@ span.blue{
 }
 span.pink{
   background-color: pink;
+}
+span.disabled{
+  cursor: not-allowed;
+  background-color: #55595e;
+}
+span.disableBeat{
+  cursor: not-allowed;
+  background-color: #55595e;
+}
+button.hidden{
+  display: none;
 }

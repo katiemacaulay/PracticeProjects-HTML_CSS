@@ -9,20 +9,23 @@
   </head>
   <body>
     <aside>
-    <div class="buyinstruments">
-      <button class="addla">Get "La"($20)</button>
-      <button class="adddo">Get "Do"($50)</button>
-      <button class="addre">Get "Re"($50)</button>
-      <button class="addfa">Get "Fa"($100)</button>
-      <button class="addti">Get "Ti"($100)</button>
-      <button class="addingbeat5">Add a Beat($150)</button>
-      <button class="addingbeat5and">Add a Beat($250)</button>
-      <button class="addingbeat6">Add a Beat($350)</button>
-      <button class="addingbeat6and">Add a Beat($450)</button>
-      <button class="addingbeat7">Add a Beat($550)</button>
-      <button class="addingbeat7and">Add a Beat($650)</button>
-      <button class="addingbeat8">Add a Beat($750)</button>
-      <button class="addingbeat8and">Add a Beat($850)</button>
+    <div class="buyextra">
+      <button class="addla" data-cost="20" data-note="A4">Get "La"($20)</button>
+      <button class="adddo" data-cost="50" data-note="C4">Get "Low Do"($50)</button>
+      <button class="addre" data-cost="50" data-note="D4">Get "Re"($50)</button>
+      <button class="adddo" data-cost="100" data-note="C5">Get "High Do"($100)</button>
+      <button class="addfa" data-cost="100" data-note="F4">Get "Fa"($100)</button>
+      <button class="addti" data-cost="100" data-note="B4">Get "Ti"($100)</button>
+    </div>
+    <div class="addColumn">
+      <button data-beat="beat5" data-cost="150">Add a Beat($150)</button>
+      <button data-beat="beat5and" data-cost="250">Add a Beat($250)</button>
+      <button data-beat="beat6" data-cost="350">Add a Beat($350)</button>
+      <button data-beat="beat6and" data-cost="450">Add a Beat($450)</button>
+      <button data-beat="beat7" data-cost="550">Add a Beat($550)</button>
+      <button data-beat="beat7and" data-cost="650">Add a Beat($650)</button>
+      <button data-beat="beat8" data-cost="750">Add a Beat($750)</button>
+      <button data-beat="beat8and" data-cost="850">Add a Beat($850)</button>
     </div>
     <div class="increasemoney">
       <h1>Make More Money</h1>
