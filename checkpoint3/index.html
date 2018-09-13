@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Gamja+Flower" rel="stylesheet">
+    <title>Music Clicker</title>
+  </head>
+  <body>
+    <aside>
+    <div class="buyextra">
+      <button class="addla" data-cost="20" data-note="A4">Get "La"($20)</button>
+      <button class="adddo" data-cost="50" data-note="C4">Get "Low Do"($50)</button>
+      <button class="addre" data-cost="50" data-note="D4">Get "Re"($50)</button>
+      <button class="adddo" data-cost="100" data-note="C5">Get "High Do"($100)</button>
+      <button class="addfa" data-cost="100" data-note="F4">Get "Fa"($100)</button>
+      <button class="addti" data-cost="100" data-note="B4">Get "Ti"($100)</button>
+    </div>
+    <div class="addColumn">
+      <button data-beat="beat5" data-cost="150">Add a Beat($150)</button>
+      <button data-beat="beat5and" data-cost="250">Add a Beat($250)</button>
+      <button data-beat="beat6" data-cost="350">Add a Beat($350)</button>
+      <button data-beat="beat6and" data-cost="450">Add a Beat($450)</button>
+      <button data-beat="beat7" data-cost="550">Add a Beat($550)</button>
+      <button data-beat="beat7and" data-cost="650">Add a Beat($650)</button>
+      <button data-beat="beat8" data-cost="750">Add a Beat($750)</button>
+      <button data-beat="beat8and" data-cost="850">Add a Beat($850)</button>
+    </div>
+    <div class="increasemoney">
+      <h1>Make More Money</h1>
+      <button class="getteacher">Get a Music Instructor($100)</button>
+      <button class="getproducer">Get a Music Producer($500)</button>
+      <button class="makerecord">Make a Recording($1,000)</button>
+    </div>
+  </aside>
+  <div class="main">
+    <header>Kinder Music Clicker</header>
+    <div class="buttonholder">
+      <button class="musicalperformance">Musical Performance</button>
+      <button class="masterpiece">Play your own music</button>
+      <button class="stopper">Stop it/Prepare Replay</button>
+    </div>
+    <h2 class="textbox">You have made nothing</h2>
+    <div class="clickcounter"></div>
+    <div id="instrument1">
+      <!-- <div class="intrument1beats">
+        <container>Do</container>
+        <container>Ti</container>
+        <container>La</container>
+        <container>So</container>
+        <container>Fa</container>
+        <container>Mi</container>
+        <container>Re</container>
+        <container>Do</container>
+      </div> -->
+      <div class="beat1 intrument1beats">
+        <span class="highdo" data-note="C5" data-color="red" data-note="C5" data-color="red"></span>
+        <span class="ti" data-note="B4" data-color="pink" data-note="B4"></span>
+        <span class="la" data-note="A4" data-color="blue" data-note="A4"></span>
+        <span class="so" data-note="G4" data-color="darkgreen" data-note="G4"></span>
+        <span class="fa" data-note="F4" data-color="green" data-note="F4"></span>
+        <span class="mi" data-note="E4" data-color="yellow" data-note="E4"></span>
+        <span class="re" data-note="D4" data-color="orange" data-note="D4"></span>
+        <span class="lowdo" data-note="C4" data-color="red" data-note="C4"></span>
+      </div>
+      <div class="beat1and intrument1beats">
+        <span class="highdo" data-note="C5" data-color="red"></span>
+        <span class="ti" data-note="B4" data-color="pink"></span>
+        <span class="la" data-note="A4" data-color="blue"></span>
+        <span class="so" data-note="G4" data-color="darkgreen"></span>
+        <span class="fa" data-note="F4" data-color="green"></span>
+        <span class="mi" data-note="E4" data-color="yellow"></span>
+        <span class="re" data-note="D4" data-color="orange"></span>
+        <span class="lowdo" data-note="C4" data-color="red"></span>
+      </div>
+      <div class="beat2 intrument1beats">
+        <span class="highdo" data-note="C5" data-color="red"></span>
+        <span class="ti" data-note="B4" data-color="pink"></span>
+        <span class="la" data-note="A4" data-color="blue"></span>
+        <span class="so" data-note="G4" data-color="darkgreen"></span>
+        <span class="fa" data-note="F4" data-color="green"></span>
+        <span class="mi" data-note="E4" data-color="yellow"></span>
+        <span class="re" data-note="D4" data-color="orange"></span>
+        <span class="lowdo" data-note="C4" data-color="red"></span>
+      </div>
+      <div class="beat2and intrument1beats">
+        <span class="highdo" data-note="C5" data-color="red"></span>
+        <span class="ti" data-note="B4" data-color="pink"></span>
+        <span class="la" data-note="A4" data-color="blue"></span>
+        <span class="so" data-note="G4" data-color="darkgreen"></span>
+        <span class="fa" data-note="F4" data-color="green"></span>
+        <span class="mi" data-note="E4" data-color="yellow"></span>
+        <span class="re" data-note="D4" data-color="orange"></span>
+        <span class="lowdo" data-note="C4" data-color="red"></span>
+      </div>
+      <div class="beat3 intrument1beats">
+        <span class="highdo" data-note="C5" data-color="red"></span>
+        <span class="ti" data-note="B4" data-color="pink"></span>
+        <span class="la" data-note="A4" data-color="blue"></span>
+        <span class="so" data-note="G4" data-color="darkgreen"></span>
+        <span class="fa" data-note="F4" data-color="green"></span>
+        <span class="mi" data-note="E4" data-color="yellow"></span>
+        <span class="re" data-note="D4" data-color="orange"></span>
+        <span class="lowdo" data-note="C4" data-color="red"></span>
+      </div>
+      <div class="beat3and intrument1beats">
+        <span class="highdo" data-note="C5" data-color="red"></span>
+        <span class="ti" data-note="B4" data-color="pink"></span>
+        <span class="la" data-note="A4" data-color="blue"></span>
+        <span class="so" data-note="G4" data-color="darkgreen"></span>
+        <span class="fa" data-note="F4" data-color="green"></span>
+        <span class="mi" data-note="E4" data-color="yellow"></span>
+        <span class="re" data-note="D4" data-color="orange"></span>
+        <span class="lowdo" data-note="C4" data-color="red"></span>
+      </div>
+      <div class="beat4 intrument1beats">
+        <span class="highdo" data-note="C5" data-color="red"></span>
+        <span class="ti" data-note="B4" data-color="pink"></span>
+        <span class="la" data-note="A4" data-color="blue"></span>
+        <span class="so" data-note="G4" data-color="darkgreen"></span>
+        <span class="fa" data-note="F4" data-color="green"></span>
+        <span class="mi" data-note="E4" data-color="yellow"></span>
+        <span class="re" data-note="D4" data-color="orange"></span>
+        <span class="lowdo" data-note="C4" data-color="red"></span>
+      </div>
+      <div class="beat4and intrument1beats">
+        <span class="highdo" data-note="C5" data-color="red"></span>
+        <span class="ti" data-note="B4" data-color="pink"></span>
+        <span class="la" data-note="A4" data-color="blue"></span>
+        <span class="so" data-note="G4" data-color="darkgreen"></span>
+        <span class="fa" data-note="F4" data-color="green"></span>
+        <span class="mi" data-note="E4" data-color="yellow"></span>
+        <span class="re" data-note="D4" data-color="orange"></span>
+        <span class="lowdo" data-note="C4" data-color="red"></span>
+      </div>
+      <div class="beat5 intrument1beats">
+        <span class="highdo" data-note="C5" data-color="red"></span>
+        <span class="ti" data-note="B4" data-color="pink"></span>
+        <span class="la" data-note="A4" data-color="blue"></span>
+        <span class="so" data-note="G4" data-color="darkgreen"></span>
+        <span class="fa" data-note="F4" data-color="green"></span>
+        <span class="mi" data-note="E4" data-color="yellow"></span>
+        <span class="re" data-note="D4" data-color="orange"></span>
+        <span class="lowdo" data-note="C4" data-color="red"></span>
+      </div>
+      <div class="beat5and intrument1beats">
+        <span class="highdo" data-note="C5" data-color="red"></span>
+        <span class="ti" data-note="B4" data-color="pink"></span>
+        <span class="la" data-note="A4" data-color="blue"></span>
+        <span class="so" data-note="G4" data-color="darkgreen"></span>
+        <span class="fa" data-note="F4" data-color="green"></span>
+        <span class="mi" data-note="E4" data-color="yellow"></span>
+        <span class="re" data-note="D4" data-color="orange"></span>
+        <span class="lowdo" data-note="C4" data-color="red"></span>
+      </div>
+      <div class="beat6 intrument1beats">
+        <span class="highdo" data-note="C5" data-color="red"></span>
+        <span class="ti" data-note="B4" data-color="pink"></span>
+        <span class="la" data-note="A4" data-color="blue"></span>
+        <span class="so" data-note="G4" data-color="darkgreen"></span>
+        <span class="fa" data-note="F4" data-color="green"></span>
+        <span class="mi" data-note="E4" data-color="yellow"></span>
+        <span class="re" data-note="D4" data-color="orange"></span>
+        <span class="lowdo" data-note="C4" data-color="red"></span>
+      </div>
+      <div class="beat6and intrument1beats">
+        <span class="highdo" data-note="C5" data-color="red"></span>
+        <span class="ti" data-note="B4" data-color="pink"></span>
+        <span class="la" data-note="A4" data-color="blue"></span>
+        <span class="so" data-note="G4" data-color="darkgreen"></span>
+        <span class="fa" data-note="F4" data-color="green"></span>
+        <span class="mi" data-note="E4" data-color="yellow"></span>
+        <span class="re" data-note="D4" data-color="orange"></span>
+        <span class="lowdo" data-note="C4" data-color="red"></span>
+      </div>
+      <div class="beat7 intrument1beats">
+        <span class="highdo" data-note="C5" data-color="red"></span>
+        <span class="ti" data-note="B4" data-color="pink"></span>
+        <span class="la" data-note="A4" data-color="blue"></span>
+        <span class="so" data-note="G4" data-color="darkgreen"></span>
+        <span class="fa" data-note="F4" data-color="green"></span>
+        <span class="mi" data-note="E4" data-color="yellow"></span>
+        <span class="re" data-note="D4" data-color="orange"></span>
+        <span class="lowdo" data-note="C4" data-color="red"></span>
+      </div>
+      <div class="beat7and intrument1beats">
+        <span class="highdo" data-note="C5" data-color="red"></span>
+        <span class="ti" data-note="B4" data-color="pink"></span>
+        <span class="la" data-note="A4" data-color="blue"></span>
+        <span class="so" data-note="G4" data-color="darkgreen"></span>
+        <span class="fa" data-note="F4" data-color="green"></span>
+        <span class="mi" data-note="E4" data-color="yellow"></span>
+        <span class="re" data-note="D4" data-color="orange"></span>
+        <span class="lowdo" data-note="C4" data-color="red"></span>
+      </div>
+      <div class="beat8 intrument1beats">
+        <span class="highdo" data-note="C5" data-color="red"></span>
+        <span class="ti" data-note="B4" data-color="pink"></span>
+        <span class="la" data-note="A4" data-color="blue"></span>
+        <span class="so" data-note="G4" data-color="darkgreen"></span>
+        <span class="fa" data-note="F4" data-color="green"></span>
+        <span class="mi" data-note="E4" data-color="yellow"></span>
+        <span class="re" data-note="D4" data-color="orange"></span>
+        <span class="lowdo" data-note="C4" data-color="red"></span>
+      </div>
+      <div class="beat8and intrument1beats">
+        <span class="highdo" data-note="C5" data-color="red"></span>
+        <span class="ti" data-note="B4" data-color="pink"></span>
+        <span class="la" data-note="A4" data-color="blue"></span>
+        <span class="so" data-note="G4" data-color="darkgreen"></span>
+        <span class="fa" data-note="F4" data-color="green"></span>
+        <span class="mi" data-note="E4" data-color="yellow"></span>
+        <span class="re" data-note="D4" data-color="orange"></span>
+        <span class="lowdo" data-note="C4" data-color="red"></span>
+      </div>
+    </div>
+  </div>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="Tone.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
