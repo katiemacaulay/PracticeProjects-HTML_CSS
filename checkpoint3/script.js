@@ -57,8 +57,6 @@ function disableNotes(){
 }
 
 function disableColumn(){
-  $('.beat4 > span').addClass('disableBeat');
-  $('.beat4and > span').addClass('disableBeat');
   $('.beat5 > span').addClass('disableBeat');
   $('.beat5and > span').addClass('disableBeat');
   $('.beat6 > span').addClass('disableBeat');
