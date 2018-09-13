@@ -1,0 +1,296 @@
+html, body{
+  margin: 0px auto;
+  box-sizing: border-box;
+  font-family: 'Sawarabi Mincho', sans-serif;
+}
+/* changes aside to a top bar visually  */
+aside{
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: hsla(0, 100%, 100%, 0.8);
+  border-bottom: 5px solid black;
+  font-weight: 500;
+  width: 100%;
+}
+/* In the top navbar */
+.lead{
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0px;
+  padding: 5px;
+}
+h1{
+  margin: 15px 0px 5px 25px;
+}
+.contact{
+  margin: 0px;
+  padding: 10px 0px 5px 0px;
+}
+.sidebox{
+  margin: 20px 25px 0px 0px;
+}
+.mainnav{
+  font-weight: 300;
+  text-align: center;
+}
+.mainnav > ul > li{
+  font-size: 10px;
+  padding: 5px;
+  display: inline;
+}
+.mainnav > ul > li:nth-child(even){
+  color: #2e3b4f;
+}
+.mainnav > ul > li:hover{
+  color: #709376;
+}
+.links{
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+}
+.icon{
+  -webkit-filter: grayscale(100%); /* Safari */
+    filter: grayscale(100%);
+  height:30px;
+}
+ul{
+  list-style-type: none;
+  padding: 5px;
+}
+/* Everything in the main */
+.main{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "boxa boxa"
+    "boxb boxb"
+    "boxc boxc"
+    "boxd boxd"
+    "boxfa boxfb"
+    "boxg boxh"
+    "boxi boxi"
+    "boxj boxj";
+}
+/* header settings */
+h2, h4, h5{
+  font-size: 24px;
+  text-align: center;
+}
+.mainimg{
+  grid-area: boxa;
+  background-image: url(../img/sheet2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 350px;
+}
+/* About Section */
+.about{
+  grid-area: boxb;
+  display: flex;
+  margin: 50px 50px 90px 50px;
+}
+.musicclass > p{
+  font-size: 18px;
+  margin: 20px;
+}
+.myphoto{
+  background-image: url(../img/IMG_3096.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: .8;
+  margin: 40px 0px 40px 0px;
+  width: 1000px;
+  box-shadow: inset 0px 0px 2px 2px black;
+}
+/* Events & Calendar */
+.upcomingevents{
+  background-color: #eff3f9;
+  padding: 130px 20px 130px 20px;
+  border: 1px solid black;
+  grid-area: boxc;
+}
+h4{
+  width: 100%;
+  margin: 0px 0px 20px 0px;
+}
+table{
+  margin-left: 20%;
+  width: 70%;
+  font-size: 1.5em;
+}
+/* Class Descriptions */
+.mselectives{
+  grid-area: boxd;
+}
+.mselectives > h2{
+  padding: 60px 0px 0px 0px;
+}
+.story1, .story2, .story3, .story4{
+  margin: 20px;
+}
+.story1{
+  grid-area: boxfa;
+}
+.story2{
+  grid-area: boxfb;
+}
+.story3{
+  grid-area: boxg;
+  border-top: solid black 1px;
+}
+.story4{
+  grid-area: boxh;
+  border-top: solid black 1px;
+}
+h3{
+  font-size: 22px;
+  text-align: center;
+  text-decoration: underline;
+  height: 50px;
+  line-height: 50px;
+}
+.text > p{
+  margin: 0px 20px 0px 20px;
+  font-size: 18px;
+}
+.storyimg{
+  background-image: url(http://www.tamswitmark.com/wp-content/uploads/2013/09/WIZ-YPE-logo1-541x346.jpg);
+  background-position: bottom;
+  opacity: .8;
+}
+.storyimg2{
+  background-image: url(../img/edgarchaparro.jpg);
+  background-size: cover;
+}
+.storyimg3{
+  background-image: url(../img/lower.jpg);
+  opacity: .8;
+}
+.storyimg4{
+  background-image: url(../img/upper.jpg);
+  opacity: .8;
+}
+.storyimg, .storyimg2, .storyimg3, .storyimg4{
+  background-size: cover;
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 400px;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.story1 > .text, .story2 > .text{
+  position: relative;
+  transition: .5s ease;
+  opacity: 0;
+  transform: translate(0, 300px);
+  -ms-transform: translate(0, 300px);
+  text-align: center;
+}
+.story3 > .text, .story4 > .text{
+  position: relative;
+  transition: .5s ease;
+  opacity: 0;
+  transform: translate(0, -300px);
+  -ms-transform: translate(0, -300px);
+  text-align: center;
+}
+.story1:hover .storyimg, .story2:hover .storyimg2, .story3:hover .storyimg3, .story4:hover .storyimg4{
+  opacity: 0.1;
+}
+.story1:hover .text, .story2:hover .text, .story3:hover .text, .story4:hover .text{
+  opacity: 1;
+}
+/* link sections */
+.youtubelinks{
+  background-color: #eff3f9;
+  border: 1px solid black;
+  grid-area: boxi;
+  padding-bottom: 100px;
+}
+.videos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+iframe{
+  margin: 10px;
+  height: 300px;
+  width: 350px;
+  border: 2px solid black;
+  border-radius: 5px;
+  opacity: .8;
+}
+iframe:hover{
+  opacity: 1;
+}
+.practicelinks{
+  grid-area: boxj;
+  height: 300px;
+}
+h5{
+  padding: 100px 0px 100px 0px;
+}
+footer{
+  text-align: center;
+}
+
+/* Medium and up (Tablets) */
+@media (max-width: 992px) {
+  aside{
+    justify-content: space-around;
+  }
+  .lead{
+    padding: 0px;
+  }
+  .sidebox{
+    margin: 0px;
+  }
+  .musicclass > p{
+    font-size: 16px;
+  }
+  .myphoto{
+    width: 0px;
+  }
+  iframe{
+    height: 100px;
+    width: 175px;
+  }
+/* Small/ Phones */
+@media (max-width: 767px){
+  .musicclass > p{
+    font-size: 15px;
+  }
+  .main{
+    grid-template-areas:
+      "boxa boxa"
+      "boxb boxb"
+      "boxc boxc"
+      "boxd boxd"
+      "boxfa boxfa"
+      "boxfb boxfb"
+      "boxg boxg"
+      "boxh boxh"
+      "boxi boxi"
+      "boxj boxj";
+  }
+  table{
+    width: 70%;
+    font-size: 16px;
+  }
+  .story1, .story2, .story3, .story4{
+    margin: 0px;
+  }
+  .story3{
+    margin-top: 100px;
+  }
+}
