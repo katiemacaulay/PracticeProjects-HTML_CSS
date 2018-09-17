@@ -1,6 +1,6 @@
 'use strict'
 
-let clickCounter = 1000;
+let clickCounter = 0;
 let multiplier = 1
 
 function updateClickCounter() {
