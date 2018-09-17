@@ -1,6 +1,6 @@
 'use strict'
 
-let clickCounter = 100000;
+let clickCounter = 200;
 
 $('.musicalperformance').click(function(){
   clickCounter++;
@@ -75,10 +75,12 @@ function addingCoolness(){
   addButton.click(function(){
   // return false;
     let cost = $(this).data('cost')
-    if(cost < clickCounter){
+    if(cost <= clickCounter){
       let noteToEnable = $(this).data('note');
       $(`[data-note="${noteToEnable}"]`).removeClass('disabled');
       $(this).addClass('hidden');
+      clickCounter = clickCounter - cost;
+      $(".textbox").text(`You have made: $${clickCounter}`);
     }
   })
 }
@@ -90,13 +92,36 @@ function addingAwesomeness(){
     if(cost < clickCounter){
       let noteToEnable = $(this).data('beat');
       $(`.${noteToEnable} > span`).removeClass('disableBeat');
-      $(this).addClass('hidden');
+      clickCounter = clickCounter - cost;
+      $(".textbox").text(`You have made: $${clickCounter}`);
     }
   })
 }
 
+function addingTeacher(){
+  let addMoney = $('.increasemoney > button')
+  addMoney.click(function(){
+    let cost = $(this).data('cost')
+    if(cost < clickCounter){
+      clickCounter = clickCounter - cost;
+      $(".textbox2").text(`You are more musical!`);
+      $(".textbox").text(`You have made: $${clickCounter}`);
+    }
+  })
+}
+// function addingtoCounter(){
+//   if($(".textbox2")='You are more musical!'){
+//     clickCounter = clickCounter + 1;
+//     $(".textbox").text(`You have made: $${clickCounter}`);
+//   }else
+//   }
+// }
+//
+// addingtoCounter();
+
 addingCoolness();
 addingAwesomeness();
+addingTeacher();
 
 $('span').click(function(){
   let isClicked = $(this).data('clicked')

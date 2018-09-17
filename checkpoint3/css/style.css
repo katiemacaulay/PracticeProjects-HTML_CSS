@@ -28,7 +28,9 @@ button{
   height: 40px;
   width: 40px;
   margin: 2px;
-  font-size: 0px;
+  color: #55595e;
+  font-size: 25px;
+  text-align: center;
   background-color: #d2d8e0;
   display: block;
 }
@@ -87,4 +89,8 @@ span.disableBeat{
 }
 button.hidden{
   display: none;
+}
+li{
+  list-style-type: none;
+  font-size: 35px;
 }
