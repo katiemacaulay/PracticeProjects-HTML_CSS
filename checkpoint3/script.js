@@ -1,20 +1,22 @@
 'use strict'
 
-let clickCounter = 200;
+let clickCounter = 1000;
+let multiplier = 1
 
-$('.musicalperformance').click(function(){
-  clickCounter++;
+function updateClickCounter() {
+  clickCounter = clickCounter + (1 * multiplier);
   $(".textbox").text(`You have made: $${clickCounter}`);
-});
+}
+
+$('.musicalperformance').click(updateClickCounter);
 
 $('.stopper').click(function(){
   Tone.Transport.stop()
 })
 $('.masterpiece').click(function(){
   var synth3 = new Tone.AMSynth().toMaster()
-  clickCounter++;
+  updateClickCounter()
   let notesToPlay = []
-  $(".textbox").text(`You have made: $${clickCounter}`);
   $('.intrument1beats').each(function(beat, spanContainer){
     notesToPlay.push([])
     $('span', spanContainer).each(function(i, span) {
@@ -103,21 +105,14 @@ function addingTeacher(){
   addMoney.click(function(){
     let cost = $(this).data('cost')
     if(cost < clickCounter){
+      multiplier = multiplier * 2;
       clickCounter = clickCounter - cost;
       $(".textbox2").text(`You are more musical!`);
       $(".textbox").text(`You have made: $${clickCounter}`);
     }
   })
 }
-// function addingtoCounter(){
-//   if($(".textbox2")='You are more musical!'){
-//     clickCounter = clickCounter + 1;
-//     $(".textbox").text(`You have made: $${clickCounter}`);
-//   }else
-//   }
-// }
-//
-// addingtoCounter();
+
 
 addingCoolness();
 addingAwesomeness();
