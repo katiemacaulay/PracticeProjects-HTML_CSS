@@ -75,7 +75,6 @@ disableColumn();
 function addingCoolness(){
   let addButton = $('.buyextra > button')
   addButton.click(function(){
-  // return false;
     let cost = $(this).data('cost')
     if(cost <= clickCounter){
       let noteToEnable = $(this).data('note');
@@ -89,11 +88,11 @@ function addingCoolness(){
 function addingAwesomeness(){
   let addBeat = $('.addColumn > button')
   addBeat.click(function(){
-  // return false;
     let cost = $(this).data('cost')
     if(cost < clickCounter){
       let noteToEnable = $(this).data('beat');
       $(`.${noteToEnable} > span`).removeClass('disableBeat');
+      $(this).addClass('hidden');
       clickCounter = clickCounter - cost;
       $(".textbox").text(`You have made: $${clickCounter}`);
     }
@@ -106,6 +105,7 @@ function addingTeacher(){
     let cost = $(this).data('cost')
     if(cost < clickCounter){
       multiplier = multiplier * 2;
+      $(this).addClass('hidden');
       clickCounter = clickCounter - cost;
       $(".textbox2").text(`You are more musical!`);
       $(".textbox").text(`You have made: $${clickCounter}`);
